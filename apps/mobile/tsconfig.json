@@ -1,19 +1,22 @@
 {
-  "extends": "expo/tsconfig.base",
+  "extends": "@react-native/typescript-config/tsconfig.json",
   "compilerOptions": {
-    "strict": true,
-    "jsx": "react-native", // ✅ 이 줄을 추가!
+    "types": [
+      "nativewind/types"
+    ],
+    "baseUrl": "./",
     "paths": {
       "@/*": [
-        "./*"
+        "./src/*"
+      ],
+      "@shared/*": [
+        "../../packages/shared/*"
       ]
     }
   },
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts",
+    "src",
+    "global.d.ts",
     "nativewind-env.d.ts"
   ]
 }
