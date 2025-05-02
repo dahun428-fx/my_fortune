@@ -7,7 +7,8 @@
     "dev:mobile": "turbo run dev --filter=mobile",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "check-types": "turbo run check-types",
+    "postinstall": "npx lightningcss --version && echo 'lightningcss verified'"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
@@ -23,6 +24,7 @@
     "packages/*"
   ],
   "dependencies": {
+    "lightningcss": "^1.21.0",
     "axios": "^1.8.4",
     "i18next": "^25.0.0",
     "react-i18next": "^15.4.1",
