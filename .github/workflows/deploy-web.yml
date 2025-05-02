@@ -39,3 +39,4 @@ jobs:
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           working-directory: apps/web
           production: true
+          force: true # ✅ 여기 추가됨 (캐시 무시하고 강제 배포)
