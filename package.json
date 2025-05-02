@@ -7,8 +7,7 @@
     "dev:mobile": "turbo run dev --filter=mobile",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types",
-    "postinstall": "npx lightningcss --version && echo 'lightningcss verified'"
+    "check-types": "turbo run check-types"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
